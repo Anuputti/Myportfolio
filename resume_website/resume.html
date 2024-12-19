@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Resume</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Ananya D</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="resume.html">Resume</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="bio.html">Bio-Data</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="resume.html">Resume</a>
+                <a href="bio.html">Bio-Data</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="main-container">
+            <div class="resume-section">
+                <h1 data-aos="fade-down" data-aos-duration="1000" class="resume">Resume</h1>
+                <br><br>
+                <div class="resume-item" data-aos="fade-up" data-aos-duration="1000">
+                    <h2>Education</h2>
+                    <ul>
+                        <li>Bachelor of Engineering in Computer Science - XYZ University (2022 - Present)</li>
+                        <li>Higher Secondary Education - ABC School (2020 - 2022)</li>
+                        <li>High School - DEF School (2018 - 2020)</li>
+                    </ul>
+                </div>
+<br>
+                <div class="resume-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Programming Languages: Python, JavaScript</li>
+                        <li>Web Development: HTML, CSS, JavaScript, React</li>
+                        <li>Tools & Platforms: Git, Docker, Linux</li>
+                        <li>Cybersecurity: Penetration Testing, Ethical Hacking</li>
+                    </ul>
+                </div>
+                <br>
+                <div class="resume-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <h2>Certifications</h2>
+                    <ul>
+                        <li>Certified Ethical Hacker (CEH) - EC-Council</li>
+                        <li>Introduction to DevOps - Coursera</li>
+                        <li>Frontend Web Development Bootcamp - Udemy</li>
+                    </ul>
+                </div>
+                <br>
+                <div class="resume-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <h2>Projects</h2>
+                    <ul>
+                        <li>Chatbot Development: Built an AI-based chatbot with Python and integrated a FAQ database with fuzzy matching.</li>
+                        <li>Portfolio Website: Created a responsive personal portfolio website using HTML, CSS, and AOS animations.</li>
+                        <li>DevOps Pipeline: Set up a CI/CD pipeline using Jenkins and Docker for automated deployments.</li>
+                    </ul>
+                </div>
+                <br>
+                <div class="resume-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <h2>Achievements</h2>
+                    <ul>
+                        <li>3rd place in XYZ Hackathon - 2024</li>
+                        <li>Scored 75% in NPTEL Ethical Hacking Course</li>
+                        <li>Top 10 finalist in College Ideathon Competition</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset: 0});
+    </script>
+    <script>
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0px)";
+        }
+        function cancel() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-500px)";
+        }
+    </script>
+</body>
+</html>

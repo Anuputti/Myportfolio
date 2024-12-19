@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Bio-Data</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Ananya D</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="resume.html">Resume</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="bio.html">Bio-Data</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="resume.html">Resume</a>
+                <a href="bio.html">Bio-Data</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="main-container">
+            <div class="bio-section">
+                <h1 data-aos="fade-down" data-aos-duration="1000" class="bio">Bio-Data</h1>
+
+                <div class="bio-item" data-aos="fade-up" data-aos-duration="1000">
+                    <h2>Personal Information</h2>
+                    <ul>
+                        <li><strong>Full Name:</strong> Ananya D</li>
+                        <li><strong>Date of Birth:</strong> January 1, 2000</li>
+                        <li><strong>Gender:</strong> Female</li>
+                        <li><strong>Nationality:</strong> Indian</li>
+                        <li><strong>Languages:</strong> English, Hindi, Kannada</li>
+                    </ul>
+                </div>
+
+                <div class="bio-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <h2>Educational Qualifications</h2>
+                    <ul>
+                        <li>Bachelor of Engineering in Computer Science - XYZ University (2022 - Present)</li>
+                        <li>Higher Secondary Education - ABC School (2020 - 2022)</li>
+                        <li>High School - DEF School (2018 - 2020)</li>
+                    </ul>
+                </div>
+
+                <div class="bio-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Programming: Python, JavaScript</li>
+                        <li>Web Development: HTML, CSS, JavaScript, React</li>
+                        <li>Cybersecurity: Ethical Hacking, Penetration Testing</li>
+                        <li>DevOps: Docker, Jenkins</li>
+                    </ul>
+                </div>
+
+                <div class="bio-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <h2>Hobbies and Interests</h2>
+                    <ul>
+                        <li>Coding and exploring new technologies</li>
+                        <li>Reading about Cybersecurity</li>
+                        <li>Traveling and photography</li>
+                        <li>Listening to music and playing guitar</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset: 0});
+    </script>
+    <script>
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0px)";
+        }
+        function cancel() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-500px)";
+        }
+    </script>
+</body>
+</html>
