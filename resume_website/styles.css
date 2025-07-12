@@ -292,3 +292,11 @@ section{
     color: rgb(109,67, 0);
     text-shadow: 0 0 10px rgb(183, 147, 88);
 }
+.scroll-panel {
+  max-height: 70vh;          /* Adjust height as needed */
+  overflow-y: auto;          /* Enable vertical scrolling */
+  padding-right: 1rem;       /* Optional: space to avoid text hitting scrollbar */
+  border: 1px solid #ddd;    /* Optional: outline the panel */
+  border-radius: 4px;        /* Optional: rounded corners */
+  background: #fafafa;       /* Optional: panel background */
+}
